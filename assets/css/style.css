@@ -1,0 +1,16 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#formText{
+	width: 400px;
+	margin: 20px;
+	text-align: center;
+}
+
+button{
+	display: block;
+	padding: 5px 20px;
+	margin: 20px auto;
+}
