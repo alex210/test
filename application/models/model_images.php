@@ -1,6 +1,6 @@
 <?php
-require '\application\classes\ParseTxt.php';
-require '\application\classes\ImageProcessing.php';
+require './application/classes/ParseTxt.php';
+require './application/classes/ImageProcessing.php';
 
 class Model_Images extends Model
 {

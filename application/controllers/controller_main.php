@@ -1,5 +1,5 @@
 <?php
-require '\application\models\model_images.php';
+require './application/models/model_images.php';
 
 class Controller_Main extends Controller
 {
@@ -12,9 +12,12 @@ class Controller_Main extends Controller
 	{	
 		$this->model = new Model_Images($_FILES['file']['tmp_name']);
 		$links = $this->model->returnLinks();
-		echo '<pre>';
-		print_r($links);
-		echo '</pre>';
-		// return $links;
+		
+		$links = array_map("rtrim", $links);
+		function linkImg($link){
+			return '/assets/images'.strrchr($link, '/');
+		};
+		$links = array_map("linkImg", $links);
+		echo json_encode($links);
 	}
 }

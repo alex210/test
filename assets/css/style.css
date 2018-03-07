@@ -1,6 +1,9 @@
 *{
 	margin: 0;
 	padding: 0;
+	border: none;
+	box-sizing: border-box;
+	font-size: 0;
 }
 
 #formText{
@@ -14,3 +17,15 @@ button{
 	padding: 5px 20px;
 	margin: 20px auto;
 }
+
+.wrapper{
+	padding: 0 10px;
+}
+
+.wrapImg{
+	display: inline-block;
+	margin: 5px;
+	text-align: center;
+	overflow-x: hidden;
+}
+

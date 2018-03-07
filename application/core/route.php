@@ -37,7 +37,7 @@ class Route
 		}
 		else
 		{
-			Route::ErrorPage404();
+			// Route::ErrorPage404();
 		}
 		
 		$controller = new $controller_name;
@@ -49,7 +49,7 @@ class Route
 		}
 		else
 		{
-			Route::ErrorPage404();
+			// Route::ErrorPage404();
 		}
 	
 	}
