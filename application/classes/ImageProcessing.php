@@ -27,10 +27,11 @@ class ImageProcessing
 	}
 
 	function drawWatermark($dst){
-		ImageTTFtext($dst, $this->fontSize, 0, 15, 25, $this->color, $this->font, $this->text);
+		ImageTTFtext($dst, $this->fontSize, 0, 100, 25, $this->color, $this->font, $this->text);
 	}
 
 	function saveImg($dst,$src,$path){
+		$path = urldecode($path);
 		ImageJPEG ($dst, $path, 100);
 		imagedestroy($src);
 	}
